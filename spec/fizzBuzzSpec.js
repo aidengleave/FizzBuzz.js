@@ -7,6 +7,13 @@ describe('fizzBuzz', function(){
       fizzbuzz = new fizzBuzz();
       expect(fizzbuzz.isDivisibleByThree(3)).toBe(true);  
     });
+
+    describe('knows when a numberis NOT', function() {
+      it('divisible by 3', function() {
+        fizzbuzz = new fizzBuzz();
+        expect(fizzbuzz.isDivisibleByThree(1)).toBe(false);
+      });
+    });
   });
 });
 
