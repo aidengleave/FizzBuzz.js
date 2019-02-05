@@ -33,5 +33,11 @@ describe('fizzBuzz', function(){
       it('divisible by 15', function() {
         expect(fizzbuzz.isDivisibleByFifteen(14)).toBe(false);
       });
+
+      describe('when playing, says', function() {
+        it('"Fizz" when a number is divisible by 3', function() {
+          expect(fizzbuzz.says(3)).toEqual("Fizz");
+        });
+      });
     });
   });
